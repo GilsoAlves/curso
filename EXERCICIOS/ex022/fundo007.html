@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
     <style>
-        #conteinner {
-            height: 400px;
+        #containner {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            position: relative;
+            height: 96vh;
             padding: 10px;
             background-color: red;
     
         }
         #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute; /* vc tem que colocar position relative no container e abslute no conteudo , para pode mexer no seu posicionamento*/
             height: 200px;
             width: 400px;
             background-color: yellow;
-            
+            border-radius: 15px;
+
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <section id="conteinner">
+    <section id="containner">
         <article id="conteudo">
+           
 
         </article>
     </section>
