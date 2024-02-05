@@ -4,6 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+table {
+    width: 800px;
+    border-collapse: collapse;
+    position: relative;/*tem com colocar essa propriedade para fixar o cabeçalho na tela*/
+}
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+td,th {
+    border: 1px solid black;
+    padding: 5px;
+}
+thead,tfoot {
+    background-color: gray;
+    color: black;
+}
+
+thead > tr > th {
+    position: sticky;/*fixa o cabeçalho  da tabela na tela*/
+    top: -1px;
+    background-color: gray ;
+}
+tbody > tr:nth-child(2n) { /*efeito zebrado (odd zebra os numeros impares ou 2n-1) ou even que e par*/
+    background-color:lightgray;
+}
+
+tbody > tr:nth-child(odd){ /* 2n */
+    background-color: rgba(255, 255, 252, 0.452);
+}
+.estado {
+    color: blue;
+}
+.porcentagem {
+    color: #0F870F;
+}
+.regiao { 
+    width: 200px;
+    height: 10px;
+    border-collapse: collapse; 
+    position: relative;
+
+}
+
+.regiao th {
+    background-color: mediumaquamarine;
+    position: sticky;
+    top: -1px;
+}
+.regiao > tbody > tr:nth-child(2n){
+    background-color:yellow;
+}
+
+section {
+    width: 450px;
+    height: 292px;
+    background-color: rgb(255, 255, 255);
+}
+section > table {
+    width: 450px;
+    height: 150px;
+    padding: 10px;
+}
+.num {
+    text-align: right;
+}
+.brasil {
+    width: 300px;
+    background-color: #0F870F;
+
+}
+.brasil th {
+    background-color: rgb(207, 132, 132);
+}
+
+
+    </style>
+
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
